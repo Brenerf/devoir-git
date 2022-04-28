@@ -1,0 +1,90 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\chead{en-tête centre}
+\cfoot{pied-de-page centre}
+
+
+\title{devoir}
+\author{DE SOUZA Brener}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\pagebreak
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+
+\section{Première section}
+\subsection{première sous section}
+
+\section{Deuxième section}
+\subsection{première sous section}
+
+Un algorithme: \\
+
+\begin{lstlisting}[language=c]
+#include <stdio.h>
+int main() {
+   printf("Hello, World!");
+   return 0;
+\end{lstlisting}
+
+deux formules mathématiques: 
+
+\begin{equation} \\
+    x=\frac{-b+\sqrt{b^{2}\times4ac}}{2a}
+\end{equation}
+
+\begin{equation} \\
+    f(x) = \sqrt{x^{2}+1}
+\end{equation}
+
+Une Liste de langages:
+\begin{itemize}
+    \item C
+    \item C++
+    \item Python
+    \item Java
+\end{itemize}
+
+Une référence: \\
+
+"L'espionne de Tanger (2009) \cite{maria} est un roman de l'écrivaine espagnole María Dueñas. C'est un récit très bien conçu sur la vie trépidante de Sira Quiroga, une jeune couturière qui a quitté Madrid quelques mois avant la guerre civile. En attendant, pour le lecteur, l'approche de l'auteur d'un contexte historique critique en Espagne et en Europe est révélatrice."
+
+\begin{thebibliography}{1}
+\bibitem{maria} María Dueñas. L'espionne de Tanger, 2009.
+
+\end{thebibliography}
+
+Une figure Overleaf\footnote{au dos de la page}:
+\begin{figure}[h]
+    \centering
+    \includegraphics{devoirs/overleaflogop2.png}
+    \caption{Caption}
+    \label{fig:my_label}
+\end{figure}
+
+Un tableau:
+\begin{table}[h]
+    \centering
+    \begin{tabular}{l|c||r}
+    left & center & right \\ \hline
+        1 & 2 & 3 \\
+        4 & 5 & 6 \\
+        7 & 8 & 9 \\
+    \end{tabular}
+    \caption{Des Numéros}
+    \label{tab:un_label}
+\end{table}  
+
+\end{document}
